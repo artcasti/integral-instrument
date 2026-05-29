@@ -1,0 +1,164 @@
+#contenido{
+max-width: 1000px;    
+ margin: auto;
+    
+}
+.frmservicios{
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+
+    
+}
+
+.frmservicios select{
+    width: 75%;
+}
+
+#selsubcateg{
+    width: 75%;
+}
+
+.linea__form #selsubcateg select{
+    width: 100%;
+}
+
+.linea__form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.linea__form img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    border: 1px solid #000;
+    margin: 10px 0px;
+}
+
+.linea__form input[type="file"]{
+    width: 100%;
+    margin:0;
+
+
+}
+
+.linea__form .file{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #000;
+    width: 75%;
+    justify-content: space-between;
+}
+
+.linea__form .file__select{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    width: 75%;
+}
+
+.frmservicios label{
+    color:#000;
+    margin-bottom: 5px;
+    width:20%;
+    text-align: right;
+}
+
+
+.frmservicios input[type="text"]{
+    border:1px solid #000;
+    padding:10px;
+    width:75%;    
+}
+
+.form__textarea{
+    border:1px solid #000;
+
+    padding:10px;
+    height: 80px;
+    width:75%;   
+}
+
+#btn-enviar{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    background: #E66112;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#btn-enviar:hover{
+    cursor: pointer;
+}
+
+.info__ppal{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info__ppal{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #000;
+    background: rgba(0,0,0,0.4);
+}
+
+.fila__form {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 15px;
+    justify-content: center
+}
+
+.fila__form label{
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+.fila__form input[type="text"]{
+    width: 83%;
+
+}
+
+.fila__form textarea{
+    width: 90%;
+
+}
+
+
+.fila__form select{
+    width: 55%;
+    display: flex;
+    margin: auto;
+}
+
+
+.fila__form #selsubcateg{
+    
+    width: 55%;
+}
+.fila__form #selsubcateg select{
+    width: 100%;
+}
+
+.fila__form input[type="button"]{
+    margin-top: 30px;
+    margin-left: 15px;
+    width: 35%;
+
+}

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"c:\\\\xampp\\\\htdocs\\\\integralinstrument\" -Force)",
+      "Bash(Select-Object -Property Mode, Name)",
+      "Bash(grep -E \"\\\\.php$\")"
+    ]
+  }
+}

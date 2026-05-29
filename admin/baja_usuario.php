@@ -1,0 +1,31 @@
+<?php session_start();
+
+if (!isset($_SESSION['k_username'])){
+header("Location: login.php");
+}
+
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<body>
+<?php
+include("conexion.php");
+include ("functions.php");
+$query=("update `usuarios` set habilitado=0 WHERE idusuario=".$_GET['id'].";");
+
+
+$result = $conexion->query($query); 
+if($result){
+registra_log("Usuarios","Elimina idusuario: ".$_GET['id']);	
+header("Location: alta_usuarios.php");
+}else{
+echo $query."<br>";
+echo "no se ha podido dar de baja el usuario ".mysql_error();
+}
+
+
+?>
+</body>
+</html>

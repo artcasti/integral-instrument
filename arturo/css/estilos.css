@@ -1,0 +1,1095 @@
+/** Indice
+1.- Reset CSS
+2.- Estilos de la home
+3.- Estilos del footer
+4.- Estilos del Form
+5.- Estilos de Servicios
+6.- Estilos de las Novedades
+7.- Estilo de Contactenos
+8.- Estilo del Detalle
+9.- Responsive Max 760
+10.- Responsive Max 480
+**/
+
+
+/*---------------- 1.- Reset CSS -----------------------------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*--------------------------------------------------------------------*/
+
+
+/*-------------------------------- 2.- Estilos de la home -----------------------------------*/
+
+
+@charset "utf-8";
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+font-family: AvantGardn;
+src: url("../fonts/AVGARDN.TTF");
+}
+
+
+@font-face {
+font-family: AvantGardnLTBook;
+src: url("../fonts/AvantGardeLT-Book.TTF");
+}
+
+
+@font-face {
+font-family: BankGothicRegDB;
+src: url("../fonts/bankgothic-regular-db.ttf");
+}
+@font-face {
+font-family: Tempus Sans ITC;
+src: url("../fonts/TEMPSITC.ttf");
+}
+
+
+
+
+.row{
+    width:100%;
+
+}
+
+.banner{
+    width:100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    animation: banner 80s infinite;
+    -moz-animation: banner 80s infinite;
+}
+/*
+@keyframes banner{
+    
+    0%,15%{background-image: url('../banner/casa-2-28115_28115.jpg');}
+    16%,31% {background-image: url('../banner/64977-5401131.jpg');}
+    32%,47%{background-image: url('../banner/Hormigon-celular-2.jpg');}
+    48%,63% {background-image: url('../banner/Imagen1.jpg');}
+    64%,89% {background-image: url('../banner/Impermeabilizacion.jpg');}
+    90%,100% {background-image: url('../banner/impermeabilizaciones-04.jpg');}
+}
+*/
+.header{
+    position: absolute;
+    top:0px;
+    width:100%;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6aa3a5+1,ddf1f9+65,feffff+100 */
+background: rgb(106,163,165); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(106,163,165,1) 1%, rgba(221,241,249,1) 65%, rgba(254,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(106,163,165,1) 1%,rgba(221,241,249,1) 65%,rgba(254,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(106,163,165,1) 1%,rgba(221,241,249,1) 65%,rgba(254,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6aa3a5', endColorstr='#feffff',GradientType=0 ); /* IE6-9 */
+
+    height: 142px;
+}
+
+.contenedor_header {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.logo_texto{
+    font-family: Tempus Sans ITC;
+    color: rgba(26,20,20,.6);
+    font-size:60px;
+    background: url(../img/regla.png) repeat-x;
+    background-position: bottom;
+
+padding:10px;
+}
+
+
+.titulo_header{
+     font-family: Tempus Sans ITC;
+    font-size: 50px;
+    color:#000;
+}
+
+
+.titulo_header:first-child{
+    width: 350px; 
+    text-align: left;
+}
+
+.and{
+     font-family: Tempus Sans ITC;
+    font-size: 100px;
+    color: rgba(0,0,0,.4);
+    margin-right: 50px;
+}
+
+.header__telefono{
+    margin-top: 15px;
+    color: #fff;
+    font-family: sans-serif;
+    text-align: right;
+    line-height: 1.5em;
+}
+
+.telefono{
+    font-family: AvantGardn;
+    font-size: 20px;
+}
+
+.header_rojo{
+    position: absolute;
+    top:142px;
+    width: 100%;
+    background: rgba(97,157,181,1);
+    height: 25px;
+    display: flex;
+    color: #fff;
+}
+
+.contenedor_rojo{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contenedor_rojo p:first-child{
+    border-right: 1px solid #fff;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.contenedor_nav{
+    position: absolute;
+    top:230px;
+    width: 100%;
+}
+
+.navbar_home{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar_link{
+    display: block;
+    color: #fff;
+    padding: 10px 30px;
+    background: rgba(0,0,0,.6);
+    margin-bottom: 10px;
+    width: 20%;
+    text-decoration: none;
+    font-family: BankGothicRegDB;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar_link:hover{
+background: rgba(255,255,255,.3);
+}
+.contenedor, .contenedor2, .contenedor_titempresa{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.contenedor_titempresa{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 100%;
+}
+
+.localidades{
+        font-family: AvantGardn;
+    font-size: 20px;
+    align-self: center;
+    margin-left: 10px;
+}
+
+.contenedor_btnqs{
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.link_qs{
+    text-decoration: none;
+    font-family: BankGothicRegDB;
+    color: #BE0411;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+
+.titulo__empresa{
+        align-self: center;
+        margin-right: 50px;
+}
+
+.contenedor2 { position: relative; z-index: 0; padding: 0px 50px; width: 100%; display: flex; align-items:flex-start; justify-content:flex-end;}
+
+.contenedor2:before { content: ""; position: absolute; top: 71%; left: 0; z-index: -1; display: block; width: 100%; height: 4px; background: rgba(106,163,165,1); }
+
+.titulo__obras{
+    background: #fff;
+}
+
+.titulo{
+    height: 40px;
+    font-family: BankGothicRegDB;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 1.1px;
+}
+
+.rojo{
+    background: rgba(97,157,181,1);
+    color: #FFF;
+}
+
+.gris{
+    background: #5B5B5F;
+    color: #FFF;
+        padding-top:10px;
+}
+
+.blanco{
+    background: #FFF;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.contenedor .titulo__empresa, .contenedor .titulo__contacto{
+    text-align: right;
+    margin-right: 50px;
+    padding-top:10px;
+}
+
+.conborde{
+    border-top:3px solid #000;
+    border-bottom:3px solid #000;
+}
+
+.quienessomos{
+    background: #000;
+    height: auto;
+    box-sizing: content-box;
+    padding-bottom: 15px;
+}
+
+.contenedor_qs{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+
+}
+.columna__qs{
+    margin-top: 30px;
+}
+
+.columna__qs p{
+    font-family: sans-serif;
+    color: #fff;
+    padding: 10px
+}
+
+.slider{
+    max-width: 1000px;
+    margin: auto;
+    
+}
+
+.logo_brand{
+    height: 50px;
+    margin-left: 50px;
+}
+.contenedor_articulos{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    justify-content:flex-start;
+}
+
+.articulo__columna{
+    width: 195px;
+    height: 269px;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.articulo__img{
+    height:150px;
+    margin-top: 10px;
+
+}
+
+
+.articulo__descripcion{
+    display:flex;
+    flex-direction: column;
+    height: 105px;
+    justify-content: space-between;
+}
+.articulo__titulo{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.articulo__link{
+    font-family: AvantGardn;
+    text-decoration: none;
+
+    font-size: 28px;
+    color:#000;
+    text-align: right;
+    padding-right:10px;
+}
+
+.blanco{
+    padding-top: 10px;
+    text-align: right;
+    margin-top: 20px;
+}
+
+
+
+/*-------------------------------Estilos del Footer-------------------------------*/
+
+.footer{
+    background:  #000;
+    box-sizing:border-box;
+}
+
+.footer .contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columna__footer{
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    justify-content: space-around;
+    align-items: center
+}
+.logo__footer{
+    width: 75%;
+}
+
+.texto__footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto__footer p{
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 35px;
+    margin-bottom: 10px
+}
+
+.link__footer{
+    text-decoration: none;
+    font-family: AvantGardn;
+    font-size: 35px;
+    color: #5b5b5b;
+    letter-spacing: 1.4px;
+}
+/*-------------------------------Estilos del Form-------------------------------*/
+
+.form__contacto{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin:10px;
+    
+}
+
+    .linea__form{
+        display: flex;
+         flex-direction: row;
+        justify-content: space-around;
+    }
+.texto__form{
+    color:#fff;
+    width:100%;
+    font-size: 28px;
+    font-family: sans-serif;
+    text-align: right;
+}
+.texto__form:nth-child(2){
+        margin-bottom: 20px;
+}
+
+.form__contacto label{
+    color:#fff;
+    margin-bottom: 5px;
+    width:20%;
+    font-size: 18px;
+    font-family: AvantGardn;
+}
+
+
+.form__contacto input{
+    border:none;
+    margin-bottom: 15px;
+    padding:10px;
+    width:345px;
+    display: block;
+}
+
+.form__textarea{
+    border:none;
+    margin-bottom: 15px;
+    padding:10px;
+    height: 100px;
+    width:345px;
+}
+
+#btnform{
+    color: #fff;
+    font-size: 20px;
+    text-align: right;
+    width: 100%;
+    background: #000;
+}
+
+#btnform:hover{
+    cursor: pointer;
+}
+
+.banner_contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacto__text{
+background: rgba(0,0,0,.6);
+    color: #fff;
+    font-family: AvantGardn;
+    padding: 20px;
+}
+
+/*-------------------------------Estilos de Servicios -------------------------------*/
+
+
+.header2{
+    background: #000;
+    height: 100px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6aa3a5+1,ddf1f9+65,feffff+100 */
+background: rgb(106,163,165); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(106,163,165,1) 1%, rgba(221,241,249,1) 65%, rgba(254,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(106,163,165,1) 1%,rgba(221,241,249,1) 65%,rgba(254,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(106,163,165,1) 1%,rgba(221,241,249,1) 65%,rgba(254,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6aa3a5', endColorstr='#feffff',GradientType=0 ); /* IE6-9 */
+}
+
+.contenedor_header2{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_texto2{
+    font-family: Tempus Sans ITC;
+    color: rgba(26,20,20,.6);
+    font-size:50px;
+    background: url(../img/regla.png) repeat-x;
+    background-position: bottom;
+
+padding:10px;
+}
+
+
+.header__telefono2{
+    font-family: AvantGardn;
+    color: #555;
+    display: flex;
+    align-items: baseline;
+    font-size: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.telefono2{
+    border-right: 1px solid #555;
+    margin-right: 5px;
+    padding-right: 5px;
+}
+
+.icon-menu{
+    display: none;
+}
+
+.contenedor_nav2{
+    background: #5B5B5F;
+    height: 35px;
+    margin-bottom: 0px;
+}
+
+.navbar_home2{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding-top:10px ;
+}
+
+
+
+.menu{
+    display: flex;
+}
+
+.navbar_link2{
+    display: block;
+    color: #fff;
+    padding: 4px 10px;
+    text-decoration: none;
+    font-family: BankGothicRegDB;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.navbar_link2:hover{
+background: rgba(255,255,255,.3);
+}
+
+
+
+.menu__item:nth-child(2), .menu__item:nth-child(3),.menu__item:nth-child(4),.menu__item:nth-child(5){
+    border-left: 1px solid #fff;
+}
+
+.linearoja{
+ width:65%;
+    height: 25px;
+    float: left;
+    border-bottom: 2px solid #BE0411;
+}
+
+
+/*-------------------------------Estilos de las novedades-------------------------------*/
+
+.novedades{
+    max-width: 1000px;
+    margin: auto;
+}
+.caja__novedad{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    padding:5px;
+    height:165px;
+    overflow-y: hidden;
+
+}
+
+.caja__novedad:nth-child(odd){
+    background:rgba(102,102,102,1); 
+}
+.caja__novedad:nth-child(even){
+    background:rgba(154,154,154,1);
+}
+
+.caja__novedad:nth-child(even) .novedad__info .novedad__titulo, .caja__novedad:nth-child(even) .novedad__info .novedad__texto{
+    color: #000;
+}
+
+
+.novedad__img,.novedad__info{
+
+}
+
+.novedad__img{
+    margin-top: auto;
+    margin-left:10px;
+    height: 150px;
+    width:300px;
+    order:3;
+}
+
+.novedad__info{
+    width:100%;
+
+    order:1;
+    font-family: AvantGardn;
+}
+
+
+.novedad__titulo{
+    color:#fff;
+    margin-top: 0px;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+
+.novedad__texto{
+    color:#fff;
+    max-height:106px;
+    overflow-y: hidden;
+
+}
+.novedad__link{
+font-family: AvantGardn;
+    text-decoration: none;
+    color:#000;
+    font-size: 25px;
+    width:10%;
+    text-align: right;
+    order:2;
+    margin-bottom: inherit;
+    align-self:flex-end;
+    text-transform: uppercase;
+}
+
+
+.linearojanovedades{
+    width:78%;
+    height: 25px;
+    float: left;
+    border-bottom: 2px solid #BE0411;
+}
+
+
+/*---------------------Estilos de Contactenos---------------------*/
+
+.banner_contacto{
+    width:100%;
+    height: 400px;
+    background-image: url('../banner/casa-2-28115_28115.jpg');
+    background-size: cover;
+    background-position: 50% 65%;
+}
+
+/*---------------------Estilos de Detalle---------------------*/
+
+.contenedor_detalle{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+}
+
+.info__ppal{
+/*    border:1px solid #000;*/
+    width: 500px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+}
+
+.ruta{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: #5f5f5f;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.info__titulo{
+    font-family: sans-serif;
+     color:#BE0411;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.info__ppal p{
+    font-family: sans-serif;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+.consultar{
+    display: flex;
+    justify-content: space-between;
+}
+.linearojaconsultar{
+    width: 80%;
+    border-bottom: 4px solid #BE0411;
+}
+
+.info__link{
+    text-decoration: none;
+    color: #BE0411;
+    font-family: AvantGardn;
+    font-weight: bold;
+    font-size: 22px;
+}
+.info__galeria{
+/*    border:1px solid #000;*/
+    width: 500px;
+    margin-top: 80px;
+}
+
+.imagenunica{
+    width: 495px;
+    height: 400px;
+    margin: auto;
+}
+
+.textoadicional{
+    margin-top: 20px;
+    font-family: sans-serif;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+
+.mision{
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.mision p{
+    font-family: Avantgardn;
+    font-size: 16px;
+    letter-spacing: 1.1px;
+    padding: 5px;
+}
+
+/*-------------------------------Responsive Max 760-------------------------------*/
+@media (max-width:760px){
+
+    .contenedor_header, .navbar_home, .contenedor_qs, .contenedor_articulos, .contenedor_rojo {
+        max-width: 100%;
+        margin-right: 5px;
+    }
+ 
+ .titulo_header{
+    font-size: 25px;
+}
+
+
+.titulo_header:first-child{
+    width:auto; 
+    text-align: left;
+}
+
+.and{
+    margin-right: 30px;
+}
+    
+    
+    
+    .navbar_link{
+    width: 200px;
+    }
+    
+    .quienessomos{
+        height:auto;
+    }
+    .contenedor_qs, .contenedor_detalle{
+        flex-direction: column;
+        align-items: center;
+    }
+
+     .contenedor_articulos{
+        flex-wrap: wrap;
+         justify-content: center;
+    }
+    
+    .articulo__columna{
+        margin-bottom: 10px;
+    }
+
+  
+     
+    .footer .contenedor {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center
+    }
+    
+    .header__telefono2{
+    flex-direction: column;
+    }
+    
+    .contenedor_nav2{
+    width:100%;     
+    position: absolute;
+    top: 132px; 
+        background: none;
+    }
+    
+    
+    .navbar_home2 {
+    position: absolute;    
+    display: block;
+    left:-100%;
+    width: 100%;
+    transition: all 0.4s;
+    align-content: flex-start; 
+        z-index: 2;
+}
+
+    
+.menu{
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 40px; 
+
+}
+
+
+    .navbar_link2{
+    display: block;
+    text-decoration: none;
+    background: #999999;
+    color:#fff;
+    text-transform: uppercase;
+    padding:10px 20px;
+    font-size: 15px;
+    text-align: left;
+    border-bottom: 1px solid #fff;
+    width: 50%;  
+   
+}
+
+.navbar_link2:hover{
+    background: #fff;
+    color:#999999;
+}
+
+    
+    .icon-menu{
+    display: block;
+    height: 40px;
+    font-size: 30px;
+    background: #999999;
+    color:#fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    margin:5px;
+    cursor: pointer;
+    
+}
+
+.mostrar{
+    left:0;
+}
+
+.fixedicon{
+    position: fixed;
+    top:0;
+    right:0;
+}
+
+.fixednav{
+    position: fixed;
+    top:60;
+    right:0;
+}
+
+    .header2{
+        height: 140px
+    }
+    
+}
+
+/*-------------------------------Responsive Max 480-------------------------------*/
+@media (max-width:480px){
+
+       .contenedor_header,.contenedor_header2{
+        flex-direction: column;   
+    }
+    
+    .contenedor_rojo{
+        flex-direction: column;   
+
+        align-items: center;
+    }
+    
+    .contenedor_rojo p:first-child{
+    border: none;
+    margin-right:0;
+    }
+
+    .localidades{
+        display: none;
+    }
+    
+    
+    .header{
+        height: auto;
+    }
+    .contenedor_header{
+        height:200px;
+        margin-bottom: 10px;
+    }    
+
+.header_rojo{
+    position: absolute;
+    top:250px;
+    height: auto;
+    }
+    
+    
+.titulo_header:first-child{
+    width: auto; 
+    text-align: left;
+}
+
+.and{
+     font-family: AvantGardn;
+    font-size: 100px;
+    color: rgba(255,255,255,.4);
+    margin-right: 50px;
+}
+    
+     .contenedor_articulos, .novedades{
+        margin-top: 30px;
+    }
+    
+    .contenedor_btnqs{
+        height: 30px;
+    }
+    
+    .contenedor_header2{
+        align-items: center;
+    }
+    
+    .header2{
+        height: 200px;
+    }
+    
+    .logo_header2{
+        
+    }
+    .header__telefono2{
+        margin-left: 20px;
+    }
+    
+        .contenedor_nav{
+            top:300px;
+        }
+ 
+    .texto__form{
+    text-align: center;
+}
+
+    .form__contacto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin:10px;
+align-items: center    
+}
+    .linea__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+
+.form__contacto label{
+    color:#fff;
+    margin-bottom: 5px;
+}
+
+
+.form__contacto input{
+    border:none;
+    margin-bottom: 15px;
+    padding:10px
+}
+
+.form__textarea{
+    border:none;
+    margin-bottom: 15px;
+    padding:10px;
+    height: 80px;
+}
+
+#btnform{
+    color: #fff;
+    font-size: 20px;
+    text-align: right;
+
+}
+
+#btnform:hover{
+    cursor: pointer;
+}
+
+    
+.info__ppal, .info__galeria{
+/*    border:1px solid #000;*/
+    width: 100%;
+    margin-left: 5px;
+    }
+ 
+}

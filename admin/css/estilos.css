@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+font-family:'Helvetica','Verdana','Monaco',sans-serif;
+background-color: #FFF;/*#CEB957;*/
+}
+
+#contenedor {
+
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+/*border: 1px solid #000;*/
+	/*border:1px solid black;*/
+}
+
+#content {
+	margin:auto;
+	width: 1248px;
+	background-color: #FFF;
+}
+
+#div_left3{
+	float:left;
+	padding: 0px;
+	margin: 0 20px 0px 0;
+}
+
+#div_left2{
+	
+	width:252px;
+	height: 400px;
+	overflow-y:auto;
+}
+#div_left4{
+	float:left;
+	padding: 0px;
+	margin: 0 20px 0px 0;
+	width:225px;
+	height: 400px;
+	overflow-y:auto;
+}
+
+#div_left45{
+	float:left;
+	padding: 0px;
+	margin: 0 20px 0px 0;
+	width:225px;
+	height: 400px;
+	overflow:auto;
+}
+
+
+#div_left{
+	float: left;
+	width: 580px;
+	background-color: #FFF;
+}
+
+#div_right{
+	float: right;
+	width: 580px;
+	background-color: #FFF;
+}
+
+
+.tabla {
+	background-color: #FFF;
+	border: 1;
+	font-size: 12px;
+	font-family: verdana;
+}
+
+.tabla tr:hover {background-color: #CCC;
+color: #000;
+}
+
+.tabla thead td {
+	font: bold 12px/18px Arial, Sans-serif;
+	color: white;
+	background-color: #be0411;
+	border-collapse: collapse;
+	border-bottom: #ccc 2px solid;
+	padding: 0;
+	z-index: 1;
+	text-align: center;
+}
+
+.tablapermisos {	
+	background-color: #FFF;
+	border: 3;
+	font-size: 11px;
+	font-family: verdana;
+	width: 200px;
+	height:400px;
+		
+}
+
+#btnmod, #btnstar, #btnstarf, #trash,#btneye ,#btneyes {
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color:#333;
+}
+
+
+.tablapermisos tr:nth-child(even) { background: #ddd }
+.tablapermisos tr:nth-child(odd) { background: #fff}
+
+.tablapermisos textarea {
+    width: 100px;
+}
+
+
+.tablesorter-default th,
+.tablesorter-default thead td {
+	font: bold 12px/18px Arial, Sans-serif;
+	color: white;
+	background-color: #880035;
+	border-collapse: collapse;
+	border-bottom: #ccc 2px solid;
+	padding: 0;
+	z-index: 1;
+}
+.tablesorter-default tfoot th,
+.tablesorter-default tfoot td {
+	border: 0;
+		z-index: 1;
+}
+.tablesorter-default .header,
+.tablesorter-default .tablesorter-header {
+	background-image: url(data:image/gif;base64,R0lGODlhFQAJAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==);
+	background-position: center right;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	white-space: normal;
+	padding: 4px 20px 4px 4px;
+		z-index: 1;
+}
+.tablesorter-default thead .headerSortUp,
+.tablesorter-default thead .tablesorter-headerSortUp,
+.tablesorter-default thead .tablesorter-headerAsc {
+	background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
+	border-bottom: #000 2px solid;
+		z-index: 1;
+}
+.tablesorter-default thead .headerSortDown,
+.tablesorter-default thead .tablesorter-headerSortDown,
+.tablesorter-default thead .tablesorter-headerDesc {
+	background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7);
+	border-bottom: #000 2px solid;
+		z-index: 1;
+}
+.tablesorter-default thead .sorter-false {
+	background-image: none;
+	cursor: default;
+	padding: 4px;
+		z-index: 1;
+}
+
+

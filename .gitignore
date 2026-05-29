@@ -1,0 +1,15 @@
+# Credenciales - NO subir al repositorio
+admin/conexion.php
+admin/conexion_web.php
+softlab/class/appconfig.ini
+softlab/class/appconfig_web.ini
+softlab/class/enviar.php
+softlab/class/enviar2.php
+
+# Archivos de sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Logs
+*.log

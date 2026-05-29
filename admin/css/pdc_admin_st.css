@@ -1,0 +1,720 @@
+@charset "utf-8";
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+font-family: AvantGardn;
+src: url("AVGARDN.TTF");
+}
+
+/*----------------------------------------------Estilos del Header----------------------------------------------*/
+
+.header{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.header label{
+    font-family: avantgardn,sans-serif;
+    font-size: 42px;
+    text-transform: uppercase;
+    color:#999;
+}
+.logo{
+     box-shadow: 2px 2px 15px #999;
+}
+.logo img{
+     padding: 10px;
+    height:105px;
+}
+
+.logo_texto_admin{
+    font-family: Tempus Sans ITC;
+    color: rgba(26,20,20,.6);
+    font-size:35px;
+
+    padding:10px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6aa3a5+1,ddf1f9+65,feffff+100 */
+background: rgb(106,163,165); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(106,163,165,1) 1%, rgba(221,241,249,1) 65%, rgba(254,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(106,163,165,1) 1%,rgba(221,241,249,1) 65%,rgba(254,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(106,163,165,1) 1%,rgba(221,241,249,1) 65%,rgba(254,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6aa3a5', endColorstr='#feffff',GradientType=0 ); /* IE6-9 */
+
+}
+
+.navbar__header a{
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin-left: 10px;
+    color: #000;
+}
+
+.navbar__header a img{
+    display: flex;
+    justify-content: center;
+
+}
+
+.img__link:hover{
+    cursor: pointer;
+}
+
+/*----------------------------------------------Estilos del Home----------------------------------------------*/
+.wrapper{
+    border-top: 10px solid rgba(106,163,165,1); 
+    border-bottom: 10px solid rgba(106,163,165,1);
+    padding-bottom: 20px;
+    padding-top: 8px;
+    box-shadow: 0px -2px 10px;
+}
+
+.contenido{
+    max-width: 1000px;
+    margin: auto;
+    display: flex
+}
+
+.columna__menu{
+    width:33.33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.columna__menu a{
+    text-decoration: none;
+    font-family: avantgardn;
+}
+
+.boton_home{
+    width:326px;
+    height:244px;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;    
+}
+
+.boton_quienessomos, .boton_servicios, .boton_cursos, .boton_novedades{
+    width:326px;
+    height:117px;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.boton_home{
+    background: #DEDC00;
+    color: #fff;
+    font-size: 44px
+}
+
+.boton_quienessomos{
+    background: #E6007E;
+    color: #fff;
+    font-size: 30px;
+}
+
+
+.boton_servicios{
+    background: #00A19A;
+    color: #fff;
+    font-size: 30px;
+}
+
+.boton_cursos{
+    background: #36A9E1;
+    color: #fff;
+    font-size: 30px;
+}
+
+.boton_novedades{
+    background: #951B81;
+    color: #fff;
+    font-size: 30px;
+}
+
+.boton_home:hover, .boton_quienessomos:hover, .boton_servicios:hover, .boton_cursos:hover, .boton_novedades:hover {
+    opacity: .5;
+}
+
+/*----------------------------------------------Estilos de Imagenes del Home----------------------------------------------*/
+
+.contenido__novedades{
+        max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo__pagina{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background:rgba(106,163,165,1);
+    margin-bottom: 10px;
+}
+
+.titulo__pagina p{
+    color: #fff;
+    font-size: 18px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.subtitulo{
+    text-transform: uppercase;
+}
+
+.button_file{
+    width: 300px;
+    border: 1px solid #000;
+}
+
+.detalle__imagenes{
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+.banner{
+    width:100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+
+    animation: banner 80s infinite;
+}
+
+.jcarousel-wrapper{
+    overflow: hidden;
+    
+}
+
+.imagenes__banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.img__item  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.img__item img{
+    height: 70px;
+}
+
+.img__item .icono_accion{
+    width: 22px;
+    height: 22px;
+}
+
+/*----------------------------------------------Estilos de Quienes Somos----------------------------------------------*/
+
+.columna__quienessomos{
+   margin: 10px; 
+}
+
+.botones_quienessomos{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botones_quienessomos input{
+    margin-left: 15px;
+}
+
+/*----------------------------------------------Estilos de Servicios/Cursos/Novedades----------------------------------------------*/
+
+.filtro{
+    display: flex;
+    justify-content: space-between;
+}
+
+.col_acciones{
+    width: 380px;
+    height: 67px;
+    border: 1px solid #000;
+}
+
+.col_filtro{
+    width: 619px;
+    height: 67px;
+    border: 1px solid #000;
+}
+
+.titulo__acciones{
+    margin: 2px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.accion__link{
+    padding: 10px 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #E94E1B;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 2px;
+}
+
+.mas__link{
+    padding: 10px 11px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #F39200;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 1px;
+}
+
+.filtsubcat{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2px;
+}
+
+.selsubcateg, .buscar{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.referencias{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    margin-bottom: 10px;
+    padding: 1px;
+    background: #ccc;
+}
+
+.refeditar, .refpublicar{
+    margin-right: 5px;
+}
+
+.refeditar img, .refpublicar img, .refeliminar img{
+    width:20px;
+    height: 20px;
+}
+
+
+
+.detalle__articulo{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.detalle__articulo a{
+    text-decoration: none;
+}
+
+.articulo__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.articulo__item:nth-child(odd){
+    background: rgba(0,0,0,.4);
+}
+
+.articulo__item:nth-child(even){
+    background: rgba(0,0,0,.2);
+}
+
+.articulo__img{
+    width:100px;
+    margin-left: 10px;
+}
+
+.articulo__titulo{
+    width:80%;
+}
+
+.accion__articulo{
+    margin-right: 5px;    
+}
+
+/*----------------------------------------------Estilos del Wizard P1----------------------------------------------*/    
+
+.contenido_wizard{
+    display: flex;
+    flex-direction: column;
+    max-width:1000px;
+    margin: auto;
+}
+
+.titulo_cuadro{
+    font-weight: bold;
+}
+
+.info__ppal{
+    width:100%;
+    border: 1px solid #000;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fila__form, .fila__form_texto, .fila__form__video{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.fila__form select{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 200px;
+}
+
+.fila__form input[type="text"],.fila__form__video input[type="text"]{
+    margin-left: 50px;
+    width: 900px;
+}
+
+.fila__form_texto{
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+
+.fila__form_texto label{
+     text-align: left;
+    margin-bottom: 10px;
+}
+
+.fila__form_texto textarea{
+     height:200px;
+}
+
+.fila__form input[type="button"]{
+    width: 30%;
+    margin: auto;
+}
+
+/*----------------------------------------------Estilos del Wizard P2----------------------------------------------*/  
+
+.fila_paso2{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.fila__form__files{
+    width: 694px;
+    height: 163px;
+    border: 1px solid #000;
+    background: #ccc;
+
+}
+
+.fila__form__files p{
+        text-align: left;
+    margin-left: 5px; 
+}
+
+#selectfile{
+    background: #fff;
+    border: 1px solid #000;
+    width: 65%;
+    margin-bottom: 10px;
+}
+
+.fila__form_imgppal{
+    width: 226px;
+    height: 223px;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.fila__form_imgppal img, .imagen__galeria{
+    width: 226px;
+    height: 164px;
+    border: 1px solid #000;
+    
+}
+
+.fila__form_imgppal p{
+    width: 100%;
+    margin: 0px;
+    text-align: left;
+    margin-bottom: 12px; 
+}
+
+.fila__form_imgppal .icono_accion{
+    width: 22px;
+    height: 22px;
+    border: 0px;
+}
+
+.fila__form_imgppal .icono_accion:hover{
+    cursor: pointer;
+}
+
+.fila__form_imgppal a{
+    width: 100%;
+    text-align: right;
+}
+
+.fila_paso2_galeria {
+    display: flex;
+    flex-direction: column;
+}
+
+.fila_paso2_galeria p{
+    text-align: left
+}
+
+.fila_paso2_galeria .fila__form{
+    display: flex;
+    justify-content: space-around;
+}
+.item__galeria{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.item__galeria a{
+    width: 100%;
+    text-align: right;
+}
+
+/*----------------------------------------------Estilos del Wizard P3----------------------------------------------*/  
+
+.fila__form__video{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.fila__form__archivo{
+
+    border-bottom: 2px solid #000;
+    vertical-align: middle;
+}
+
+.fila__form__files_adicional{
+        width: 724px;
+    height: 163px;
+    text-align: left;
+}
+
+.fila__form_imgadicional{
+    margin-top: 20px;
+        width: 226px;
+    height: 185px;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.fila__form_imgadicional img{
+    width: 226px;
+    height: 164px;
+    border: 1px solid #000;
+    
+    
+}
+
+.fila__form_imgadicional .icono_accion{
+    width: 22px;
+    height: 22px;
+    border: 0px;
+}
+
+.fila__form_imgadicional .icono_accion:hover{
+    cursor: pointer;
+}
+
+.fila__form_imgadicional a{
+    width: 100%;
+    text-align: right;
+}
+
+@media (max-width:480px){
+/*----------------------------------------------Estilos del Home----------------------------------------------*/    
+    .contenido{
+        flex-direction: column;
+    }
+        .columna__menu{
+        width: 100%;    
+    }
+    
+       .columna__menu a{
+        width: 100%;    
+    }
+
+    .boton_home, .boton_quienessomos, .boton_servicios, .boton_cursos, .boton_novedades{
+       margin-top: 5px; 
+    }
+    
+    .header{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 180px;
+    }
+    
+    .navbar__header{
+        width: 100%;
+        justify-content: space-around;
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .header label{
+        display: none;
+    }
+    
+    .logo {
+        margin: auto;
+    }
+    
+    .imagenes__banner {
+        flex-direction: column;
+         align-items: center;
+    }
+    
+    .filtro{
+    display: flex;
+        flex-direction: column;
+    }
+
+.col_acciones{
+    width: 100%;
+    height: auto;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    box-sizing: content-box;
+}
+
+    .accion__novedades{
+        display: flex;
+        flex-direction: column;
+    }    
+    
+    .accion__link{
+        text-align: center;
+    }
+    .mas__link{
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+.col_filtro{
+        width: 100%;
+    height: auto;
+    border: 1px solid #000;
+}
+    
+    .filtsubcat{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2px;
+    }
+    
+    .selsubcateg, .buscar{
+        margin-bottom: 10px;
+    }
+    
+    .btnbuscar{
+        width: 50%;
+        margin: auto;
+    }
+
+    .fila__form{
+    display: flex;
+        flex-direction: column;
+    margin-bottom: 15px;
+}
+
+    .fila__form select{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+.fila__form input[type="text"],.fila__form__video input[type="text"]{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 90%;
+}
+
+.fila__form_texto label{
+     text-align: center;
+    margin-bottom: 10px;
+}    
+.fila__form input[type="button"]{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.fila_paso2{
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.fila__form__files{
+    width: 90%;
+
+    border: 1px solid #000;
+    background: #ccc;
+margin-bottom: 20px;
+}
+
+.fila__form__files p{
+        text-align: left;
+    margin-left: 5px; 
+}
+
+#selectfile{
+    background: #fff;
+    border: 1px solid #000;
+    width: 65%;
+    margin-bottom: 10px;
+} 
+    .item__galeria a{
+    width: 60%;
+    text-align: right;
+}
+    .fila__form__files_adicional{
+        width: 100%;
+    height: auto;
+    text-align: left;
+}
+    .fila__form__files_adicional input[type="submit"]{
+        width:80%;
+        margin-left: 30px;
+        
+    }
+}
